@@ -1,14 +1,13 @@
 @font-face {
-    src: url("./fonts/FormaDJRVariableNormal[opsz\,slnt\,wght]-Edu.woff2") format("woff2"),
-         url('./fonts/FormaDJRVariableNormal[opsz\,slnt\,wght]-Edu.woff') format("woff");
-    font-family: 'Forma';
+    src: url("fonts/Cairo-VariableFont_slnt\,wght.woff2") format("woff2");
+    font-family: 'Cairo';
     font-style: normal;
     font-weight: normal;
     }
     
     body{
     background-color: pink;
-    font-family: 'Forma';
+    font-family: 'Cairo';
 }
 /* how the page wrapper will appear on mobile */
 .page-wrapper{
@@ -51,7 +50,7 @@ footer{
 /* font styling area */
 h2{
     color: firebrick;
-    font-variation-settings: "opsz" 16, "wght" 900, "slnt" -8;
+    font-variation-settings: "wght" 1000, "slnt" -11;
 }
 
 h3{
@@ -60,12 +59,12 @@ h3{
     font-size: 5em;
     animation: weightChange 7s infinite;
 }
-
+/* h */
 @keyframes weightChange {
     0%, 100%{
-        font-variation-settings: "opsz" 16, "wght" 200, "slnt" 0;
+        font-variation-settings: "wght" 200, "slnt" -11;
     }
-    50%{font-variation-settings: "opsz" 16, "wght" 900, "slnt" -13;
+    50%{font-variation-settings: "wght" 1000, "slnt" 11;
     }
 }
 /* animations for the variations section */
@@ -74,20 +73,20 @@ h3{
 }
 @keyframes weightVariations {
     0%, 100%{
-        font-variation-settings: "opsz" 16, "wght" 200, "slnt" 0;
+        font-variation-settings: "wght" 200, "slnt" 0;
     }
-    50%{font-variation-settings: "opsz" 16, "wght" 900, "slnt" 0;
+    50%{font-variation-settings: "wght" 1000, "slnt" 0;
     }
 }
 /* where the animation is for the width change */
-.width{
+.slant{
     animation: widthVariations 5s infinite;
 }
 @keyframes widthVariations {
     0%, 100%{
-        font-variation-settings: "opsz" 16, "wght" 200, "slnt" 0;
+        font-variation-settings: "wght" 400, "slnt" -11;
     }
-    50%{font-variation-settings: "opsz" 16, "wght" 900, "slnt" 0;
+    50%{font-variation-settings: "wght" 400, "slnt" 11;
     }
 }
 
