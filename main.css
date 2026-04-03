@@ -30,7 +30,6 @@ grid-template-areas:
 
 #history {
 grid-area: h;
-background-color: lightcoral;
 }
 
 #variations{
@@ -43,13 +42,13 @@ grid-area: a;
 }
 /* CSS for the footer */
 footer{
-    background-color: rgb(138, 21, 21);
+    background-color: #FFA200;
     height:200px;
 }
 
 /* font styling area */
 h2{
-    color: firebrick;
+    color: #FFA200;
     font-variation-settings: "wght" 1000, "slnt" -11;
 }
 
@@ -92,7 +91,7 @@ h3{
 
 h5{
     font-size:40px;
-    color:blue;
+    color:#ffffff;
     margin:15px;
 }
 
