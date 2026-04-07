@@ -5,10 +5,6 @@
   body {
     margin: 0;
   }
-
-  h1{
-    color: #002BAC;
-  }
   
   header {
     /* where to set the color of the nav bar */
@@ -49,10 +45,10 @@
   }
   /* where to change the color of the font in the nav bar */
   nav a {
-      color: rgb(163, 144, 144);
+      color: rgb(255, 255, 255);
+      font-variation-settings: "wght" 1000, "slnt" 0;
       text-decoration: none;
       font-size: 1.2rem;
-      text-transform: lowercase;
       opacity: 0;
       transition: opacity 100ms ease-in-out;
   }

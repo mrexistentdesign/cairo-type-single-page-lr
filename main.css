@@ -24,16 +24,21 @@ grid-gap: 25px;
 grid-template-columns: 1fr 1fr;
 grid-template-rows: auto;
 grid-template-areas: 
-    "v h"
+    "v v"
+    "h h"
     "a a";
 }
 
 #history {
 grid-area: h;
+display: grid;
+grid-template-columns: 1fr 1fr;
 }
 
 #variations{
 grid-area: v;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
 }
 
 #alphabet {
@@ -43,20 +48,38 @@ grid-area: a;
 /* CSS for the footer */
 footer{
     background-color: #FFA200;
-    height:200px;
+    height:30px;
 }
 
 /* font styling area */
-h2{
+
+.histpara{
     color: #FFA200;
-    font-variation-settings: "wght" 1000, "slnt" -11;
+}
+
+.alphabetter{
+    color: #ffffff;
+    font-size: 50px;
+    font-variation-settings: "wght" 400, "slnt" 0;
+}
+
+h2{
+    color: #ffffff;
+    font-variation-settings: "wght" 800, "slnt" 0;
+}
+
+.history-side{
+    transform: rotate(-90deg);
+}
+
+.axes-side{
+    transform: rotate(90deg);
 }
 
 h3{
-    font-weight:20; 
     text-align: center;
-    font-size: 5em;
-    animation: weightChange 7s infinite;
+    font-size: 300px;
+    animation: weightChange 10s infinite;
 }
 /* h */
 @keyframes weightChange {
