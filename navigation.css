@@ -8,24 +8,16 @@
   
   header {
     /* where to set the color of the nav bar */
-      background: rgb(0, 0, 0);
-      text-align: left;
+      background: rgba(0, 0, 0, 0);
+      text-align: center;
       top:0px;
-      position: fixed;
       z-index: 999;
       width: 100%
-  }
-  
-  .logo {
-    margin: 0;
   }
   /* where to change the background color of the pop-up nav bar*/
   nav {
       position: absolute;
-      text-align: left;
-      padding-top:10px;
-      top: 100%;
-      left: 10px;
+      text-align: center;
       background: rgb(0, 0, 0);
       width: 100%;
       transform: scale(1,0);
@@ -45,10 +37,10 @@
   }
   /* where to change the color of the font in the nav bar */
   nav a {
-      color: rgb(255, 255, 255);
+      color: rgb(0, 0, 0);
       font-variation-settings: "wght" 1000, "slnt" 0;
       text-decoration: none;
-      font-size: 1.2rem;
+      font-size: 2.2rem;
       opacity: 0;
       transition: opacity 100ms ease-in-out;
   }
@@ -118,12 +110,9 @@
       display: grid;
       /* grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr; */
     }
-    .logo {
-      grid-column: 2 / span 1;
-    }
     nav {
       all: unset;
-      grid-column: 3 / 4;
+      grid-column: 1 / 4;
       display: flex;
       justify-content: flex-end;
       align-items: center;
