@@ -1,5 +1,5 @@
 *, *::before, *::after {
-    box-sizing: border-box;
+    box-sizing:border-box;
   }
   
   body {
@@ -8,15 +8,17 @@
   
   header {
     /* where to set the color of the nav bar */
+      border-top: solid 20px;
       background: rgba(0, 0, 0, 0);
       text-align: center;
-      top:0px;
+      top:-90px;
       z-index: 999;
-      width: 100%
+      width: 100%;
+      text-align: center;
   }
   /* where to change the background color of the pop-up nav bar*/
   nav {
-      position: absolute;
+    position: absolute;
       text-align: center;
       background: rgb(0, 0, 0);
       width: 100%;
@@ -27,7 +29,7 @@
   
   nav ul {
       margin: 0;
-      padding: 0;
+      padding-top: 0;
       list-style: none;
   }
   

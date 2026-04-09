@@ -12,7 +12,7 @@
 /* how the page wrapper will appear on mobile */
 .page-wrapper{
     /* where to change the width of the columns on desktop view */
-    width: min(100% - 3rem, 95ch);
+    /* width: min(100% - 3rem, 95ch); */
     margin-inline: auto;
 }
 /* how the page wrapper appears on desktop */
@@ -21,28 +21,42 @@
 .page-wrapper{
 display: grid;
 grid-gap: 25px;
-grid-template-columns: 1fr 1fr;
+grid-template-columns: 1fr 1fr 1fr;
 grid-template-rows: auto;
+width:100%;
 grid-template-areas: 
-    "v v"
-    "h h"
-    "a a";
+    "v v c"
+    "j h h"
+    "j h h"
+    "a a a"
+    "d d d";
 }
 
 #history {
 grid-area: h;
-display: grid;
-grid-template-columns: 1fr 1fr;
+}
+
+#history-title {
+    grid-area: j;
 }
 
 #variations{
 grid-area: v;
 display: grid;
-grid-template-columns: 1fr 1fr 1fr;
+grid-template-columns: 1fr 1fr;
+width: 800px;
 }
 
 #alphabet {
 grid-area: a;
+}
+
+#download {
+grid-area: d;
+}
+
+#variations-axes {
+grid-area: c;
 }
 }
 /* CSS for the footer */
@@ -53,32 +67,55 @@ footer{
 
 /* font styling area */
 
+.download{
+    color: #ffffff;
+    font-variation-settings: "wght" 800, "slnt" 0;
+    font-size: 50px;
+    text-decoration: none;
+    text-align: center;
+}
+.download:hover {
+    font-variation-settings: "wght" 900, "slnt" -11;
+    text-decoration:underline;
+}
+
 .histpara{
     color: #FFA200;
+    width: 800px;
+    line-height: 2;
 }
 
 .alphabetter{
     color: #ffffff;
-    font-size: 50px;
+    font-size: 25px;
     font-variation-settings: "wght" 400, "slnt" 0;
+    text-align: center;
 }
 
 h2{
-    color: #ffffff;
     font-variation-settings: "wght" 800, "slnt" 0;
 }
 
 .history-side{
-    transform: rotate(-90deg);
+    transform-origin: rotate(-90deg);
+    font-size: 40px;
+    color: #FFA200;
+    text-align: center;
+    text-decoration: underline;
 }
 
 .axes-side{
-    transform: rotate(90deg);
+    color: #ffffff;
+    font-size: 40px;
+    transform-origin: rotate(90deg);
+    text-align: center;
+    text-decoration: underline;
 }
 
 h3{
     text-align: center;
     font-size: 300px;
+    margin: 100px;
     animation: weightChange 10s infinite;
 }
 /* h */
@@ -113,7 +150,7 @@ h3{
 }
 
 h5{
-    font-size:40px;
+    font-size:90px;
     color:#ffffff;
     margin:15px;
 }
