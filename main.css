@@ -25,8 +25,7 @@ grid-template-columns: 1fr 1fr 1fr;
 grid-template-rows: auto;
 width:100%;
 grid-template-areas: 
-    "v v c"
-    "j h h"
+    "v v v"
     "j h h"
     "a a a"
     "d d d";
@@ -41,27 +40,37 @@ grid-area: h;
 }
 
 #variations{
-    margin-bottom: 100px;
-    margin-left: 200px;
+    padding: 75px;
 grid-area: v;
 display: grid;
-grid-template-columns: 1fr 1fr;
-width: 800px;
-align-content: center;
+grid-template-columns: 1fr 1fr 1fr;
+width: 100%;
+text-align: center;
+align-items: center;
+    background-image: url(assets/variable-backing.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 #alphabet {
-    margin-top: 100px;
+    margin-top: 75px;
 grid-area: a;
+padding: 50px;
+        background-image: url(assets/letter-backing.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+     background-position: center;
 }
 
 #download {
+            background-image: url(assets/download-backing.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 grid-area: d;
 }
 
-#variations-axes {
-grid-area: c;
-}
 }
 /* CSS for the footer */
 footer{
@@ -96,8 +105,10 @@ footer{
 }
 
 .histpara{
+    margin-left: -150px;
     color: #FFA200;
-    width: 800px;
+    width: 100%;
+    font-size: 18px;
     line-height: 2;
 }
 
@@ -114,7 +125,7 @@ h2{
 
 .history-side{
     transform: rotate(-90deg);
-    font-size: 40px;
+    font-size: 50px;
     color: #FFA200;
     text-align: center;
     text-decoration: underline;
@@ -122,7 +133,7 @@ h2{
 
 .axes-side{
     color: #ffffff;
-    font-size: 40px;
+    font-size: 50px;
     transform: rotate(90deg);
     text-align: center;
     text-decoration: underline;
