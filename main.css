@@ -6,7 +6,7 @@
     }
     
     body{
-    background-color: pink;
+    background-color: #000000;
     font-family: 'Cairo';
 }
 /* how the page wrapper will appear on mobile */
@@ -61,11 +61,21 @@ grid-area: c;
 }
 /* CSS for the footer */
 footer{
+    margin-top: 50px;
+    margin-bottom: -10px;
     background-color: #FFA200;
     height:30px;
 }
 
 /* font styling area */
+
+.hero{
+    margin-top: -100px;
+    margin-bottom: 150px;
+    background-image: url(assets/cairo-backing.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .download{
     color: #ffffff;
