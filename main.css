@@ -74,6 +74,7 @@ grid-area: d;
 }
 /* CSS for the footer */
 footer{
+    text-align: center;
     margin-top: 100px;
     margin-bottom: -10px;
     background-color: #FFA200;
@@ -89,8 +90,6 @@ footer{
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-
 
 .download{
     color: #ffffff;
@@ -145,7 +144,8 @@ h1{
     margin: 100px;
     animation: weightChange 10s infinite;
 }
-/* h */
+
+/* variations */
 @keyframes weightChange {
     0%, 100%{
         font-variation-settings: "wght" 200, "slnt" -11;
@@ -181,30 +181,3 @@ h5{
     color:#ffffff;
     margin:15px;
 }
-
-/* variable font that changes on hover */
-.variable-font{
-    font-weight:1 ;
-    height:100vh;
-    font-size: 10em;
-    display:grid;
-    place-content: center;
-    margin: 0;
-    text-align: center;
-    font-variation-settings: "wght" 40, "wdth" 0, "XXXX" 1;
-    transition: 
-        font-weight 500ms,
-        font-variation-settings 3s;
-}
-
-.variable-font:hover{
-    font-weight:500 ;
-    height:100vh;
-    font-size: 7em;
-    display:grid;
-    place-content: center;
-    margin: 0;
-    text-align: center;
-    font-variation-settings: "wght" 120, "wdth" 0, "XXXX" 100;
-}
-
